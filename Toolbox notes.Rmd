@@ -1,0 +1,42 @@
+---
+title: "OHI toolbox"
+author: "Camila Vargas"
+date: "4/20/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Region folder - scenerio (WHERE) -- It is the EEZ folder on the global prep.
+
+For this example we are going to be working with data for 8 regions.
+
+Layer.csv is a master directory on what and where is what. It shows how the toolboox demo interacts witht the OHIcore package. THis file is fill out when the different alyers are run as a check file.
+
+conf folder --> configuration files. Function.R ---> all the models of the OHI are there.
+
+All of this architecture is to check that everything is there (eg: are all the regions, are there NAs)
+
+OHI toolbox --> all the infotmation you need to calculate a score. OHI core (R pacjage) + tailor (information needed for the OHI core: all qhat it is in the github repo)
+
+pressure matrix --> it defines how each pressure affect each goal in order to assign weights to each presure layer.
+
+config.R --> say what kind of layers have weight associated
+
+goals.csv --> information for each goal for creating the rose plot and also the weight to give to each goal to calculate the final index
+
+calculate sore --> checks data and saves the necesary info for OHI core
+configure --> packages and all you need to calculate the score
+
+function.R --> all of the functions are saved and this can be costumize as needed
+
+The function i the ohicore package has more structural fucntion as forexample: how to calculate a the pressure or how to calculate a goal.
+
+#Errors
+You are going to encounter errors from R (eg you forgot a parenthesis) and errors from the OHIcor it self (somthing in a layer is not right).
+
+#Starting Point
+When ever you start a new analysis you should start fresh! Re-start R
+
