@@ -9,6 +9,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+#Book repository
+
+OHI-Science/toolbox-training 
+
+
+#Intro - What is What
+
 Region folder - scenerio (WHERE) -- It is the EEZ folder on the global prep.
 
 For this example we are going to be working with data for 8 regions.
@@ -34,9 +41,22 @@ function.R --> all of the functions are saved and this can be costumize as neede
 
 The function i the ohicore package has more structural fucntion as forexample: how to calculate a the pressure or how to calculate a goal.
 
+configure_toolbox --> run to configure all the layers you have prepared on order for the tool box to work
+
 #Errors
+
 You are going to encounter errors from R (eg you forgot a parenthesis) and errors from the OHIcor it self (somthing in a layer is not right).
 
 #Starting Point
+
 When ever you start a new analysis you should start fresh! Re-start R
 
+#Register a new leyer
+
+Once you source one layer, you update the layer with the new data and there you have to update the layers csv (opened in excel) witht the new file path.
+
+If you are working from the server and do not have the layer.csv open in excel you can update the name (file path) for the new layer calculation manualy by opening the csv in R adn using the search function to find the name of the data layer you want to access. 
+
+#Notes
+
+Every goal is a model written in a function register in the funtions.R
